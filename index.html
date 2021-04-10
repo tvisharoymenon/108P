@@ -17,50 +17,49 @@
   <div class="container">
   
     <center>
-      <h1 class = "btn btn-warning heading"> EMOTION TO EMOJI APP
+     <div>
+      <h2 class = "btn btn-primary heading"> GESTURE WEB APP
         <br>
-    <snap>&#128522;</snap>
-    <snap>&#128512;</snap>
-    <snap>&#128532;</snap>
-    <snap>&#128546;</snap>
-    <snap>&#128545;</snap>
-    <snap>&#128548;</snap>
+        <span>&#128076</span>
+        <span>&#128077</span>
+        <span>&#9996</span>
+      </h2>
 
-
-      </h1>
-    
       <br><br>
 
-      <p style="font-size: 22px;">Take your selfie to generate emoji
-      	<br>
-        <b style="color: yellow">Are you Happy?</b>
-        <br>
-        <b style="color: black">Are you Sad?</b>
-        <br>
-        <b style="color: red">Are you Angry?</b>
-        <br>
-      </p>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>Webcam  view- </label>
-       <div id ="camera"></div>
-        <br><br>
-       <button class ="btn btn-warning"  onclick="takesnapshot()">capture image</button>
+      <div>
+        <h2 class="btn btn-danger">take a selfie of a gesture to know about its meaning</h2>
+        <h3 class="btn btn-danger">on the folowing gestures the model is trained</h3>
+        <br>
+        <span>&#128077</span>
+        <span>&#128077</span>
+        <span>&#9996</span>
       </div>
-<div class = "col-md-4 col-sm-12 col-xs-12">
-  <label>prediction 1</label>
-  <p class = "emotion_name" id="result_emotion_name"></p>
-  <p class="emoji" id ="update_emoji"></p>
-  <label>prediction 2</label>
-  <p class = "emotion_name" id="result_emotion_name2"></p>
-  <p class="emoji" id ="update_emoji2"></p>
-</div>
-<div class="col-md-4 col-sm-12 col-xs-12">
-  <label>snapshot- </label>
- <div id ="result"></div>
-  <br><br>
- <button class ="btn btn-success"  onclick="check()">predict emotion</button>
-</div>
+     </div>
+
+    
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label> webcam view - </label>
+        <div id ="camera"></div>
+        <br><br>
+      <button class= "btn btn-primary" onclick = "takesnapshot()">capture button</button>
+      </div>
+      <div class = "col-md-4 col-sm-12 col-xs-12">
+        <label>prediction 1</label>
+        <p class = "emotion_name" id="result_emotion_name"></p>
+        <p class="emoji" id ="update_emoji"></p>
+        <label>prediction 2</label>
+        <p class = "emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id ="update_emoji2"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label> snapshot - </label>
+        <div id ="result"></div>
+        <br><br>
+      <button class= "btn btn-success" onclick = "check()">predict gesture</button>
+      </div>
+
     </center>
 
   </div>
